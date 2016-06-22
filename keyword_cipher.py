@@ -10,17 +10,21 @@ CIPHER_LIST = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
                '<', '>', '_', '"', "'", '!', '@', '#', '$', '%', '^', '&', '*')
 
 BUFFER_LIST = []
+TMP_CIPHER = []
 CIPHER_KEY = {}
 
 # Creates the CIPHER_KEY that is used during run time.
 def create_cipher_key(index_off_set):
-    BUFFER_LIST = list(CIPHER_LIST)
+    global CIPHER_KEY; CIPHER_KEY = {}
+    global TMP_CIPHER; TMP_CIPHER = []
+    global BUFFER_LIST; BUFFER_LIST = []
+    TMP_CIPHER = list(CIPHER_LIST)
     for char_step in range(0, index_off_set):
         buffer_val = CIPHER_LIST[char_step]
-        del BUFFER_LIST[0]
-        BUFFER_LIST.append(buffer_val)
+        del TMP_CIPHER[0]
+        TMP_CIPHER.append(buffer_val)
     for index, key_step in enumerate(CIPHER_LIST):
-        CIPHER_KEY[key_step] = BUFFER_LIST[index]
+        CIPHER_KEY[key_step] = TMP_CIPHER[index]
     return
 
 # This takes args and calls the encrypt and decrypt functions.

@@ -20,12 +20,13 @@
 | --help| Command to list Help for the program. |
 | -f | Flag to pass a File path. |
 | -s | Flag to pass a String to the script. |
-| -i | Flag to pass an index, this is used when creating the CIPHER_KEY. |
+| -i | Flag to pass an index list,Example = 1,2,3,4 -- > (!Values and Order MATTER!)|
 | -e | Flag to Encrypt |
 | -d | Flag to Decrypt |
 
 ## Updates:
-  * Script shouldn't See any issues. 
+  * Changed the Index to take a list of values, and it acts like a Combo or
+    password. Making the level of Encryption that much better. 
 
 ## ToDo:
   * None Currently
