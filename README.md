@@ -3,6 +3,8 @@
 ## Features:
    * Encrypt / Decrypt Stings 
    * Encrypt /Decrypt Text Files
+## DEMO Video:
+[![IMAGE ALT TEXT HERE](http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/simple-black-square-icons-business/126710-simple-black-square-icon-business-lock6-sc48.png)](https://www.youtube.com/watch?v=G-l1NHKPd3c)
 
 ## Installation
    * Git clone the Repo. 
@@ -35,7 +37,7 @@
   * None
 
 ## Thank you to:
-  * None
+  * Lemon65 and my father -- > "know alot about a little and a little about a lot" -- David (2013)
 
 ## Copyright:
 
