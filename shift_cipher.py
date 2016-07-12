@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# simple encryption program that will take a text file or string, and output the
+# this is a shift cipher encryption program that will take a text file or string, and output the
 # encrypted version of it either within the text file given or output a string.
 # By: Lemon65
 
@@ -25,7 +25,7 @@ def create_opts():
     (opts, args) = parser.parse_args()
     return (opts, args)
 
-# Start of the main function to start the simple encryption.
+# Start of the main function.
 def main():
     opts, args = create_opts()
     check_bool = False
@@ -36,7 +36,6 @@ def main():
             bad_int = in_step
             check_bool = True
             break
-    data_payload = ""
     if check_bool:
         print 'Error on %s Index between 1:%s' % (bad_int, len(kc.CIPHER_LIST))
         sys.exit()
@@ -63,7 +62,7 @@ def main():
     if opts.string and not opts.filename:
         print 'Final Data After|<--->|%s' % DATA_PAYLOAD
     if opts.filename and not opts.string:
-        print 'File has been Updated....' 
+        print 'File has been Updated....'
         f = open(opts.filename, "w")
         f.write(DATA_PAYLOAD)
         f.close()

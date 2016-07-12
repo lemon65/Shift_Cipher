@@ -1,5 +1,5 @@
-# Simple Encrypt
-   * Simple Encrypt is as it seems a simple Key Cipher program that was created in python, so that I could learn about the subject. Its a form of a Caesar Cipher, but with a little twist. It comes with a larger base set of encryptable values (Not just letters) and the number of levels of encrpytion are based on the index's that the user provides. For example I could pass an index of [45,23,12,6] and this would act as the index and the number of encryptions that occur during the ecryption process. Please note that while this would be very hard for a human to crack its not that hard to Brute force break this encryption method. 
+# Python -- Shift Cipher
+   * Shift Cipher is as it seems a very simple Key Cipher program that was created in python, so that I could learn about the subject. Its a form of a Caesar Cipher, but with a little twist. It comes with a larger base set of encryptable values (Not just letters) and the number of levels of encrpytion are based on the index's that the user provides. For example I could pass an index of [45,23,12,6] and this would act as the index and the number of encryptions that occur during the ecryption process. Please note that while this would be very hard for a human to crack its not that hard to Brute force break this encryption method. 
 
 ## Features:
    * Encrypt / Decrypt Stings 
@@ -10,7 +10,7 @@
 
 ## Installation
    * Git clone the Repo. 
-   	* git clone https://github.com/lemon65/simple_encrypt
+   	* git clone https://github.com/lemon65/shift_cipher
 
 ## Requirements:
    * Python 2.7.6
